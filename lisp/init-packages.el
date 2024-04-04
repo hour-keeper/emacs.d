@@ -99,6 +99,9 @@
   :config
   (meow-setup)
   (meow-global-mode 1))
+(use-package rime
+  :custom
+  (default-input-method "rime"))
 
 (use-package company
   :init
