@@ -177,7 +177,11 @@
         org-roam-ui-update-on-save t
         org-roam-ui-open-on-start t))
 
- (use-package auto-package-update
+(use-package rime
+  :custom
+  (default-input-method "rime"))
+
+(use-package auto-package-update
   :config
   (setq auto-package-update-delete-old-versions t)
   (setq auto-package-update-hide-results t)
