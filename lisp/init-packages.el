@@ -183,7 +183,7 @@
   :config
   (if
     (string-match-p ".*Android" operating-system-release)
-    (setq rime-share-data-dir (concat (getenv "PREFIX") "/share/rime-data")))
+    (setq rime-share-data-dir (concat (getenv "PREFIX") "/share/rime-data"))))
 
 (use-package auto-package-update
   :config
