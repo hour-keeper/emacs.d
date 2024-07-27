@@ -179,7 +179,11 @@
 
 (use-package rime
   :custom
-  (default-input-method "rime"))
+  (default-input-method "rime")
+  :config
+  (if
+    (string-match-p ".*Android" operating-system-release)
+    (setq rime-share-data-dir (concat (getenv "PREFIX") "/share/rime-data")))
 
 (use-package auto-package-update
   :config
