@@ -181,6 +181,7 @@
   :custom
   (default-input-method "rime")
   :config
+  (setq rime-user-data-dir "~/.config/emacs-rime/")
   (if
     (string-match-p ".*Android" operating-system-release)
     (setq rime-share-data-dir (concat (getenv "PREFIX") "/share/rime-data"))))
